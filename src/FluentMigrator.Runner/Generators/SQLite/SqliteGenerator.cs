@@ -59,10 +59,5 @@ namespace FluentMigrator.Runner.Generators.SQLite
 		{
 			return compatabilityMode.HandleCompatabilty("Forign keys are not supported in Sqlite");
 		}
-		
-		public override string Generate(DeleteColumnExpression expression)
-		{
-			return compatabilityMode.HandleCompatabilty("Sqlite does not support deleting of columns");
-		}
 	}
 }
